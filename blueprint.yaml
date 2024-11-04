@@ -13,8 +13,10 @@ integrations: []
 hardwareDependencies:
   - name: Tracker One
     link: https://www.particle.io/tracker-one/
+    tags: [ "Tracker One" ]
   - name: Particle T-SoM Module
     link: https://www.particle.io/tracker-som/
+    tags: [ "T-SoM" ]
 description: |
   - Adding additional GPIO (adds 3 ports of 3.3V GPIO using a MCP23008)
   - Adding additional ADC (adds 3 ADC inputs, 3.3V using an ADS1015 12-bit ADC)
