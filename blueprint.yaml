@@ -9,8 +9,7 @@ models: []
 language:
   - C++
 cloudServices: []
-integrations:
-  - qcom-aware
+integrations: []
 hardwareDependencies:
   - name: Tracker One
     link: https://www.particle.io/tracker-one/
