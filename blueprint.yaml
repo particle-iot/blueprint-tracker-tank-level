@@ -2,8 +2,8 @@ id: particle/blueprint-tracker-tank-level
 category: tutorial
 icon: particle.png
 gitrepo: https://github.com/particle-iot/blueprint-tracker-tank-level
-name: blueprint-tracker-tank-level
-shortDescription: Connecting a tank level sensor to the Tracker One
+name: Tracker tank level sensor integration
+shortDescription: Connecting a tank level sensor and additional GPIO/ADC to the Tracker One
 version: 1.0.0
 models: []
 language:
@@ -18,8 +18,9 @@ hardwareDependencies:
     link: https://www.particle.io/tracker-som/
     tags: [ "T-SoM" ]
 description: |
-  - Adding additional GPIO (adds 3 ports of 3.3V GPIO using a MCP23008)
-  - Adding additional ADC (adds 3 ADC inputs, 3.3V using an ADS1015 12-bit ADC)
-  - Support for a tank level sensor (240-33 ohm, common in the US)
-  - 12V boost converter, for powering low-power 12V sensors (needed for tank sensor)
+  This application note demonstrates how to extend the Tracker One with additional functionality for tank level monitoring:
 
+  - Adding GPIO ports using an MCP23008 (3.3V compatible)
+  - Adding ADC channels using an ADS1015 for 12-bit resolution
+  - Connecting a tank level sensor with 240-33 ohm resistance
+  - Integrating a 12V boost converter for low-power 12V sensors, necessary for the tank level sensor
