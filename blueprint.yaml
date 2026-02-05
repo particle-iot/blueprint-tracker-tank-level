@@ -1,13 +1,13 @@
 id: particle/blueprint-tracker-tank-level
-category: tutorial
+category: "Tracker projects"
 icon: particle.png
 gitrepo: https://github.com/particle-iot/blueprint-tracker-tank-level
 name: Tracker tank level sensor integration
 shortDescription: Connecting a tank level sensor and additional GPIO/ADC to the Tracker One
 version: 1.0.0
+tags: ["Tracker", "Sensors", "GPIO", "I2C"]
 models: []
-language:
-  - C++
+language: ["C++"]
 cloudServices: []
 integrations: []
 hardwareDependencies:
