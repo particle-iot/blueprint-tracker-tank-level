@@ -1,22 +1,31 @@
-id: particle/blueprint-tracker-tank-level
+# blueprint.yaml
+slug: blueprint-tracker-tank-level
+type: Tutorial
 category: "Tracker projects"
-icon: particle.png
-gitrepo: https://github.com/particle-iot/blueprint-tracker-tank-level
-name: Tracker tank level sensor integration
-shortDescription: Connecting a tank level sensor and additional GPIO/ADC to the Tracker One
-version: 1.0.0
+expertiseLevel: "Intermediate"
 tags: ["Tracker", "Sensors", "GPIO", "I2C"]
+icon: assets/particle.png
+gitrepo: https://github.com/particle-iot/blueprint-tracker-tank-level
+name: "Tracker Tank Level Sensor Integration"
+shortDescription: "Connecting a tank level sensor and additional GPIO/ADC to the Tracker One"
+version: 1.0.0
 models: []
 language: ["C++"]
 cloudServices: []
 integrations: []
-hardwareDependencies:
+supportedDevices:
   - name: Tracker One
-    link: https://www.particle.io/tracker-one/
-    tags: [ "Tracker One" ]
-  - name: Particle T-SoM Module
-    link: https://www.particle.io/tracker-som/
-    tags: [ "T-SoM" ]
+    link: https://docs.particle.io/reference/datasheets/tracker/tracker-one/
+  - name: T-SoM
+    link: https://docs.particle.io/reference/datasheets/tracker/tracker-som-datasheet/
+hardwareDependencies:
+  - name: Tracker One or T-SoM
+  - name: MCP23008 GPIO expander
+  - name: ADS1015 ADC
+  - name: Tank level sensor (240-33 ohm)
+  - name: 12V boost converter
+introduction: |
+  This application note demonstrates how to extend the Tracker One with additional functionality for tank level monitoring.
 description: |
   This application note demonstrates how to extend the Tracker One with additional functionality for tank level monitoring:
 
@@ -24,3 +33,6 @@ description: |
   - Adding ADC channels using an ADS1015 for 12-bit resolution
   - Connecting a tank level sensor with 240-33 ohm resistance
   - Integrating a 12V boost converter for low-power 12V sensors, necessary for the tank level sensor
+additionalResources:
+  - title: Particle Tracker Documentation
+    link: https://docs.particle.io/tracker/
